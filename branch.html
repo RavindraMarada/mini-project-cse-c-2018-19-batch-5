@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+  body{
+    background-image: url("goodback.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  }
+  .dropdown{
+  right: 10px;
+  margin: 10px;
+  max-width: 500px;
+  width: 350px;
+  height: 50px;
+  padding: 0px;
+  background-color: white;
+}
+	.container{
+	position: absolute;
+	border-radius: 150px;
+ right: 550px;
+  margin: -40px;
+  max-width: 1000px;
+  padding: 50px;
+  background-color: none;
+		}
+		input[type=date], input[type=text] {
+  width: 100%;
+  padding: 20px;
+  margin: 15px 10px 10px -20px;
+  background: white;
+}
+.button {
+  background-color: green;
+  color: white;
+  padding: 16px 20px;
+  width: 100%;
+}
+ul {
+  list-style-type: none;
+  border-radius: 50px;
+  margin: 80px;
+  padding: 10px;
+  overflow: hidden;
+  background-color: none;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+h2{
+  color: white;
+  font-style: italic;
+}
+label{
+	font-style: italic;
+  color: white;
+}
+	</style>
+</head>
+<body>
+
+	<ul>
+  <li><font size="6px"><a class="active" href="video.php">Home</a></font></li>
+  <li><font size="6px"><a href="admin_dup.html">ADMIN</a></font></li>
+  <li><font size="6px"><a href="faculty.html">Faculty</a></font></li>
+  <li><font size="6px"><a href="student.html">Student</a></font></li>
+</ul>
+	<form method="post" action="branchdetails.php" class="container">
+		<h2>BRANCH WISE</h2>
+		<label for="date"><b>ENTER THE DATE</b></label>
+		<input type="date" placeholder="enter date" name="date" required><br>
+		<label for="branch"><b>ENTER THE BRANCH</b></label>
+		<div>
+  <select name="branch" class="dropdown">
+    <option value="CSE">CSE</option>
+    <option value="ECE">ECE</option>
+    <option value="IT">IT</option>
+    <option value="EEE">EEE</option>
+    <option value="MECH">MECH</option>
+    <option value="CHEM">CHEM</option>
+  </select>
+  </div>
+		<button type="submit" class="button">SUBMIT</button>
+	</form>
+</body>
+</html>

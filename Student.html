@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+	<title>STUDENT</title>
+	<style >
+  body{
+    background-image: url("goodback2.jpg");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  }
+.container {
+  position: absolute;
+  border-radius: 50px;
+  right: 500px;
+  margin: -20px;
+  max-width: 500px;
+  padding: 50px;
+  background-color: none;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 20px;
+  margin: 15px 10px 25px -20px;
+  background: white;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: white;
+  outline: none;
+}
+.button {
+  background-color: green;
+  color: white;
+  padding: 16px 20px;
+  width: 100%;
+}
+ul {
+  list-style-type: none;
+  border-radius: 50px;
+  margin: 80px;
+  padding: 10px;
+  overflow: hidden;
+  background-color: none;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+h1{
+  color: white;
+  font-style: italic;
+}
+label{
+  color: white;
+  font-style: italic;
+}
+
+	</style>
+</head>
+<body>
+	<ul>
+  <li><font size="6px"><a class="active" href="video.php">Home</a></font></li>
+  <li><font size="6px"><a href="admin_dup.html">ADMIN</a></font></li>
+  <li><font size="6px"><a href="faculty.html">Faculty</a></font></li>
+  <li><font size="6px"><a href="student.html">Student</a></font></li>
+</ul>
+<form method="post" action="studetails.php" class="container">
+	<h1>Login To See Your Details</h1><br>
+	<label for="register number"><font size="5px"><b>Register Num</b></font></label>
+	<input type="text" placeholder="Enter Register Num" name="regno" required><br>
+	<button type="submit" class="button">Submit</button>
+</form>
+
+</body>
+</html>

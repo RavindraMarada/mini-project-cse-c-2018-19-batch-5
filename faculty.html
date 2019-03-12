@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<style>
+  	.back-img {
+  
+  background-image: url("faculty_back.png");
+  min-height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.back-logo{
+	background-image: url("faculty_logo.png");
+	min-height: 450px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+  		.container{
+  			position: absolute;
+        border-radius: 50px;
+ right: 75px;
+  margin: 500px;
+  max-width: 250px;
+  padding: 20px;
+  background-color: green;
+  		}
+  	option{
+  		width: 10%;
+  padding: 50px;
+  margin: 15px 10px 22px 0;
+  border-color: white;
+  background: white;
+  	} 
+    select{
+      padding: 5px;
+  margin: 15px 10px;
+  height: 40px;
+  background: white;
+    }
+    
+  	</style>
+<script>
+    function showInput()
+    {
+        var url = document.getElementById('list').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
+</script>
+  </head>
+<body style="background-color: darkslategrey">
+	<div class="back-logo">
+<div class="back-img">
+	
+  <form class="container">
+<select name="list" id="list" accesskey="target">
+    <option value='none' selected>Choose your option</option>
+    <option value="branch.html">BRANCH WISE</option>
+    <option value="date.html">DATE WISE</option>
+    <option value="section.html">BRANCH WITH SECTION WISE</option>
+    <option value="without_date.html">BRANCH WISE WITHOUT DATE</option>
+</select>
+<button type=button value="Go" onclick="showInput()">GO</button>
+</form>
+</div>
+</div>
+</body>
+</html>

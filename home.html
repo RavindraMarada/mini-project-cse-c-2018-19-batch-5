@@ -1,0 +1,102 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<style>
+		body{
+			background-image: url("anitsroad.jpg");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		
+	.back-logo{
+	background-image: url("anitslogo.png");
+	min-height: 250px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.navbar {
+  overflow: hidden;
+  background-color: none;
+}
+.navbar a {
+  float: center;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 0;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 10px 10px 5px black;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: left;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+	<h1 style="color: white; font-size: 40px; text-indent: 2em; font-style: italic;">ANIL NEERUKONDA INSTITUTE OF TECHNOLOGY AND SCIENCES</h1>
+	<div class="back-logo">
+	</div>
+		<h2 style="color: white; font-size: 40px; text-indent: 9em; font-style: italic;">ONLINE LATE MONITORING SYSTEM</h2>
+		<div class="navbar">
+		<div class="dropdown">
+			<button class="dropbtn"><font size="6px" color="black">SELECT BRANCH</font>
+      <i class="fa fa-caret-down"></i>
+  </button>
+		<div class="dropdown-content">
+			<a href="video.php">CSE</a>
+			<a href="">ECE</a>
+			<a href="">MECH</a>
+			<a href="">EEE</a>
+			<a href="">CHEM</a>
+			<a href="">IT</a>
+			<a href="">CIVIL</a>
+		</div>
+	</div>
+</div>
+</body>
+</html>
